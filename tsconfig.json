@@ -12,8 +12,7 @@
     "module": "NodeNext" /* Specify what module code is generated. */,
     "paths": {
       /* Specify a set of entries that re-map imports to additional lookup locations. */
-      "@/utils/*": ["./src/utils/*"],
-      "@/types/*": ["./src/types/*"]
+      "@/*": ["./src/*"]
     },
     "types": [
       "node"
