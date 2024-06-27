@@ -19,3 +19,13 @@ function checkVariable(identifier: string) {
  * @description Node environment. Could be 'production' or 'development'.
  */
 export const NODE_ENV = checkVariable("NODE_ENV");
+
+/**
+ * @description Port number for the server to listen on.
+ */
+export const PORT = 4000;
+
+/**
+ * @description OpenAI API key.
+ */
+export const OPENAI_API_KEY = checkVariable("OPENAI_API_KEY");
