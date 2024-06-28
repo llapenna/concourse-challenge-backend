@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 
 import { PORT } from "@/utils/config";
 import { Message } from "@/types/message";
@@ -7,6 +8,7 @@ import { info } from "@/utils/logger";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 app.post("/", async (req, res) => {
   const messages = req.body.messages as Message[];
