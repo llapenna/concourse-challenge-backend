@@ -11,16 +11,19 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/", async (req, res) => {
+  info(req.body);
   const messages = req.body.messages as Message[];
 
   res.writeHead(200, {
-    "Content-Type": "text/plain; charset=utf-8",
+    Connection: "keep-alive",
+    "Cache-Control": "no-cache",
+    "Content-Type": "text/event-stream",
   });
 
   const completion = await ask(messages);
 
   for await (const chunk of completion) {
-    res.write(chunk.choices[0]?.delta?.content || "");
+    res.write(`data: ${chunk.choices[0]?.delta?.content || ""}\n\n`);
   }
 
   res.end();
