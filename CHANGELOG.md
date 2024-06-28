@@ -1,5 +1,19 @@
 
 
+# 1.0.0 (2024-06-28)
+
+
+### Bug Fixes
+
+* convert the res write into an actual data stream ([cf5018c](https://github.com/llapenna/node-typescript-starter/commit/cf5018c21be42d4df5fa7f00e9caf65e37657b0d))
+
+
+### Features
+
+* apply cors middleware ([95b5b21](https://github.com/llapenna/node-typescript-starter/commit/95b5b2151d7822fb963b6b4f92aeb888655822a4))
+* **config:** add env variables ([b500ca8](https://github.com/llapenna/node-typescript-starter/commit/b500ca82764b6d088124b4dd9d00e2dbd72bbe80))
+* create post endpoint with openai request ([ba31589](https://github.com/llapenna/node-typescript-starter/commit/ba31589e3505763b4b0675f1508849f6db4cb984))
+
 ## [1.1.1](https://github.com/llapenna/node-typescript-starter/compare/1.1.0...1.1.1) (2024-04-12)
 
 
