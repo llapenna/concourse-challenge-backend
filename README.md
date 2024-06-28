@@ -14,7 +14,7 @@ This backend project serves as the server-side component for the Concourse Chall
 ### Prerequisites
 
 - [Node.js](https://nodejs.org/en) (version 20 or above)
-- pnpm (preferred), npm or yarn
+- npm (preferred), pnpm or yarn
 
 ### Set up
 
